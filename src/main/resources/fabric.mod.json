@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "more_vault",
+	"version": "${version}",
+	"name": "More Vault",
+	"description": "Mod that is used as a library for More Vault Datapack",
+	"authors": [
+		"Chrqnos"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.chrqnos.more_vault.MoreVault"
+		]
+	},
+	"mixins": [
+		"more_vault.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": ">=1.21.0 <1.22",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
